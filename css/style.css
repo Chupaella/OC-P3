@@ -20,6 +20,8 @@ body {
 }
 
 .main-container {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 1440px;
     min-width: 320px;
@@ -47,6 +49,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  padding: 5px;
 }
 
 .card-title {
@@ -88,8 +91,6 @@ ul.nav-buttons-list {
 li.nav-buttons:hover {
     border-top: 2px solid var(--main-color);
 }
-
-/****** Hebergements And Populaires ***********/
 
 /****** Headline and search *******/
 .headline {
@@ -184,20 +185,11 @@ input[type="text"] {
     background-color: #DEEBFF;
 }
 
-i.fa-solid.fa-circle-info {
-    background: var(--main-color);
-    color: white;
-    border: 2px solid #D9D9D9;
-    border-radius: 10px;
-}
-
 .headline-info {
     font-size: 16px;
     color: #000000;
 } 
 
-/****** Hebergements ***********/
-
 i.fa-solid.fa-circle-info {
     background: var(--main-color);
     color: white;
@@ -205,10 +197,22 @@ i.fa-solid.fa-circle-info {
     border-radius: 10px;
 }
 
+/****** Hebergements And Populaires ***********/
+
+.hebergements-and-populaires {
+    max-width: 1340px;
+    min-width: 325px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+/****** Hebergements ***********/
+
 .hebergements-cards {
     display: flex;
     flex-flow: row wrap;
-    align-items: flex-start;
+    justify-content: space-around;
     gap: 20px;
 }
 
@@ -223,14 +227,6 @@ section.hebergements {
     padding: 15px;
 }
 
-.hebergements-and-populaires {
-    max-width: 1440px;
-    min-width: 375px;
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-}
-
 .hebergements-cards img {
     width: 250px;
     height: 124px;
@@ -242,12 +238,14 @@ section.hebergements {
     padding: 25px;
 }
 
-.card-content {
+.hebergements .card-content {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 8px;
     padding-left: 15px;
     padding-right: 15px;
+    box-sizing: border-box;
 }
 
 .card-rating {
@@ -280,7 +278,7 @@ p.card-subtitle {
 .populaires-title {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .populaires-cards .card {
@@ -332,21 +330,23 @@ h2.activities-title {
     align-items: center;
     font-size: 22px;
     gap: 20px;
-    padding-left: 50px;
+    padding: 50px 30px 30px 30px;
 }
 
 .activities-cards {
     display: flex;
     flex-flow: row wrap;
-    align-items: flex-start;
+    justify-content: space-evenly;
     gap: 20px;
+    padding-bottom: 30px;
 }
 
 .activities-cards img {
     width: 297px;
     height: 380px;
     border-radius: 20px 20px 0 0;
-    object-fit: fill;
+    object-fit: cover;
+    padding: 0px;
 }
 
 .activities .card-content {
