@@ -212,7 +212,6 @@ i.fa-solid.fa-circle-info {
     gap: 30px;
 }
 
-
 section.hebergements {
     display: flex;
     flex-direction: column;
@@ -232,10 +231,8 @@ section.hebergements {
 }
 
 .hebergements-cards img {
-  width: calc(100% - 10px); 
   height: 124px;
   object-fit: cover;
-  padding: 5px;
   border-radius: 20px 20px 0 0;
   box-sizing: border-box;
 }
@@ -374,6 +371,7 @@ p.card-subtitle {
     align-items: flex-start;
     justify-content: flex-start;
     background-color: #F2F2F2;
+    margin-top: 30px;
 }
 
 ul.footer-links {
