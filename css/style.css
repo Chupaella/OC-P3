@@ -246,7 +246,7 @@ section.hebergements {
     border-radius: 20px;
     box-sizing: border-box;
     padding: 15px;
-    /* width: calc(68% + 60px); */
+    width: calc(68% + 60px);
 }
 
 .hebergements-cards {
@@ -479,7 +479,7 @@ ul.footer-links {
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
-        max-width: 100%;
+        max-width: 100% !important;
         gap: 30px;
     }
 
@@ -497,9 +497,10 @@ ul.footer-links {
     flex-direction: row;
     gap: 10px;
     }
+
     .hebergements,
     .populaires {
-        width: 100%;
+        width: 100% !important;
         margin: 0;
     }
 
@@ -687,7 +688,7 @@ ul.footer-links {
     }
 
     section.hebergements {
-        width: 100%;
+        width: 100% !important;
         order: 0;
         background: white;
     }
